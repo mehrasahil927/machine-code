@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+ <div class="main">
+   <p>Draggable Items</p>
+   <div class="primary">
+     <img id="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSccCE8fvVbN2M82VMvEgp-RZ02JHKoagbIzw&usqp=CAU" draggable="true" ondragstart="drag(event)">
+     <img id ="image1"src="https://i0.wp.com/www.differencebetween.com/wp-content/uploads/2018/07/Difference-Between-Atomic-Oxygen-and-Molecular-Oxygen-fig-1-e1531489473665.png" draggable="true" ondragstart="drag(event)">
+     <img id="image3"src="http://3.bp.blogspot.com/-jQ9TxRILQBw/UQm43L3edsI/AAAAAAAAA1U/-XEtxue_cRk/s1600/carbon1.png" draggable="true" ondragstart="drag(event)">
+     <img id="image4"src="https://pbs.twimg.com/profile_images/2205927106/V2ijJBwq_400x400" draggable="true" ondragstart="drag(event)">
+   </div>
+   <p>Draggable Area</p>
+   <div class="secondary">
+      
+     <div id="drop1" ondragover="allowDrop(event)" ondrop="drop(event)" ></div>
+     <div id="drop2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+     <div id="drop3" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+   </div>
+   <button onClick="myFunction()" id="button">Submit</button>
+ </div>
+ 
+
+  <script>
+    function drag(ev){
+      ev.dataTransfer.setData("text",ev.target.id);
+    }
+    function allowDrop(ev){
+      ev.preventDefault();
+    }
+    function drop(ev){
+      var data =ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+   function myFunction() {
+  document.getElementById("button").innerHTML = "Well Played";
+}
+  </script>
+
+
+</body>
+</html>

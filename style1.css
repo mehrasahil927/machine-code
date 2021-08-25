@@ -1,0 +1,63 @@
+.main {
+    border: 4px solid black;
+    height: 350px;
+    width: 600px;
+  }
+  .primary{
+    border: 2px solid black;
+    height: 90px;
+    width: 500px;
+    margin-left: 45px;
+    margin-top: 10px;
+    
+    
+  }
+  .secondary{
+    border: 2px solid black;
+    height: 90px;
+    width: 500px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+    
+  }
+  #button{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+  }
+  #image1{
+    height: 70px;
+    margin-left: 20px;
+  }
+  #image2{
+    height: 70px;
+    margin-left: 20px;
+    
+  }
+  #image3{
+    height: 70px;
+    margin-left: 20px;
+  }
+  #image4{
+    height: 70px;
+    margin-left: 20px;
+  }
+  #drop1{
+    height: 75px;
+    width: 95px;
+    border: 1px solid black;
+  }
+  #drop2{
+    border: 1px solid black;
+    height: 75px;
+    width: 95px;
+  }
+  #drop3{
+    border: 1px solid black;
+    height: 75px;
+    width: 95px;
+  }
+  
